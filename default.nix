@@ -1,8 +1,5 @@
-let nixexprsLib = import <nixexprs-lib>;
-in nixexprsLib.channel {
+import <nixexprs-lib> {
   name = "limeytexan";
 
-  outputOverlays = [
-    (nixexprsLib.auto.pkgs ./pkgs)
-  ];
+  auto.toplevel.path = ./pkgs;
 }
