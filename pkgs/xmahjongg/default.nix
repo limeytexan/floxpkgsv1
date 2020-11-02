@@ -1,4 +1,4 @@
-{ stdenv, fetchurl, libX11 }:
+{ stdenv, fetchurl, xorg }:
 
 stdenv.mkDerivation rec {
   pname    = "xmahjongg";
@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
     sha256 = "1kzz8y34q7wibcrmfb3p9rrz88qriz4slxpf1yrrfny23il66g94";
   };
 
-  buildInputs = [ libX11 ];
+  buildInputs = [ xorg.libX11 ];
 
   meta = with stdenv.lib; {
     description = "Computer Solitaire Mah Jongg";
