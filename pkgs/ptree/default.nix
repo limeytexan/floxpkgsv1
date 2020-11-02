@@ -1,6 +1,6 @@
-{ channels, psmisc }:
+{ flox, psmisc }:
 
-channels.flox.mkDerivation {
+flox.mkDerivation {
   project = "ptree";
   buildInputs = [ psmisc ];
 }
