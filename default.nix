@@ -1,4 +1,3 @@
-import <nixexprs-lib> {
-  name = "limeytexan";
+import <flox/channel> {
   topdir = ./.;
 }
