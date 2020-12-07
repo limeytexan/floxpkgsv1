@@ -2,5 +2,5 @@
 
 flox.buildRustPackage rec {
   project = "hello-rust";
-  cargoSha256  = "0qh46qyzklh4zj88brvrzqfzgdbkfpcszfb9zv7zq1rhnynkibs1";
+  cargoSha256  = "04xplfik6vhi481n06awbs9mrycg0cxwn299a0z2ysc4v4n68qcw";
 }
