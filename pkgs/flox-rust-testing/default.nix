@@ -3,7 +3,7 @@
 flox.buildRustPackage rec {
   project = "flox-rust-testing";
 
-  cargoSha256 = "012nlq0hriixajbpdir5qhs2yi71ar6r5w8zpsriv2fhqf3n7vcs";
+  cargoSha256 = "0gqvknk58d9134j7586lzrmdz050awpwy7r1a3l02z6dm7fn1k63";
 
   # Programs and libraries used only at build-time.
   nativeBuildInputs = [ ];
