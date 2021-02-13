@@ -1,9 +1,12 @@
-{ flox }:
+{ flox, stdenv }:
 
 flox.buildRustPackage rec {
   project = "flox-rust-testing";
 
-  cargoSha256 = "1i4wq8xavrg652njmc87g0dzknjmdvhn93jsf9xsi4x34v8cvf38";
+  cargoSha256 = if stdenv.isAarch64 then
+    "0gqvknk58d9134j7586lzrmdz050awpwy7r1a3l02z6dm7fn1k63"
+  else
+    "1i4wq8xavrg652njmc87g0dzknjmdvhn93jsf9xsi4x34v8cvf38";
 
   # Programs and libraries used only at build-time.
   nativeBuildInputs = [ ];
