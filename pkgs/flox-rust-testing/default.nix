@@ -2,6 +2,9 @@
 
 flox.buildRustPackage rec {
   project = "flox-rust-testing";
+  postPatch = ''
+    echo change to prompt hydra build
+  '';
 
   cargoSha256 = "0gqvknk58d9134j7586lzrmdz050awpwy7r1a3l02z6dm7fn1k63";
 
