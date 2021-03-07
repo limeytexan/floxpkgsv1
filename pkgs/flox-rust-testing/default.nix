@@ -6,7 +6,7 @@ flox.buildRustPackage rec {
     echo change to prompt hydra build
   '';
 
-  cargoSha256 = "0gqvknk58d9134j7586lzrmdz050awpwy7r1a3l02z6dm7fn1k63";
+  cargoSha256 = "109c8q10fib9rihy6lxbcmfjc28ys5yjzkla7z9xa2x1vxylp1r4";
 
   # Programs and libraries used only at build-time.
   nativeBuildInputs = [ ];
