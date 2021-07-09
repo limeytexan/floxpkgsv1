@@ -1,4 +1,4 @@
-{ stdenv, fetchurl, xorg }:
+{ stdenv, fetchurl, lib, xorg }:
 
 stdenv.mkDerivation rec {
   pname    = "xmahjongg";
@@ -11,7 +11,7 @@ stdenv.mkDerivation rec {
 
   buildInputs = [ xorg.libX11 ];
 
-  meta = with stdenv.lib; {
+  meta = with lib; {
     description = "Computer Solitaire Mah Jongg";
     license = licenses.mit;
     maintainers = with maintainers; [ limeytexan ];
